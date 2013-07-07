@@ -5,6 +5,7 @@
 	<key>fileTypes</key>
 	<array>
 		<string>gyp</string>
+		<string>gypi</string>
 	</array>
 	<key>foldingStartMarker</key>
 	<string>(?x:       # turn on extended mode
