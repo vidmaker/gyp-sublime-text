@@ -152,6 +152,12 @@
 			<array>
 				<dict>
 					<key>comment</key>
+					<string>The target_name key value, for Goto Symbol</string>
+					<key>include</key>
+					<string>#targetname</string>
+				</dict>
+				<dict>
+					<key>comment</key>
 					<string>the GYP object key</string>
 					<key>include</key>
 					<string>#string</string>
@@ -351,6 +357,29 @@
 					<string>\\.</string>
 					<key>name</key>
 					<string>invalid.illegal.unrecognized-string-escape.gyp</string>
+				</dict>
+			</array>
+		</dict>
+		<key>targetname</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>string.quoted.gyp</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.function.gyp</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>(['"]target_name['"])\s*:\s*['"]([^'"]+)['"]\s*,</string>
 				</dict>
 			</array>
 		</dict>
