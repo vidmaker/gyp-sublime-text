@@ -23,6 +23,8 @@
 				<string># </string>
 			</dict>
 		</array>
+		<key>symbolIndexTransformation</key>
+		<string>/(.+)/GYP: $1/;</string>
 	</dict>
 	<key>uuid</key>
 	<string>6e75bc20-0c30-11e3-8ffd-0800200c9a66</string>
